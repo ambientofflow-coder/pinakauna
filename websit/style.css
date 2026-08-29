@@ -1,0 +1,87 @@
+body {
+    background: linear-gradient(to right, purple, violet)
+}
+
+.main {
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    width: 900px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.content {
+    padding: 40px;
+    background-color: white;
+    flex: 1;
+    text-align: center;
+    
+}
+
+.content input {
+    font-weight: bold;
+    font-family: 'lato', sans-serif;
+    font-size: 16px;
+    width: 280px;
+    padding: 16px;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid violet;
+    
+}
+
+.content button {
+    padding: 20px;
+    width: 300px;
+    color: white;
+    font-family: 'lato', sans-serif;
+    font-weight: bold;
+    font-size: 15;
+    background-color: blueviolet;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.content button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(137, 43, 226, 0.432);
+    transition: all 0.3 ease;
+}
+
+.content button:active {
+    transform: translate(0);
+    width: 290px;
+}
+.content input:focus {
+    border-color: violet;
+    box-shadow: 0 0 15px violet; 
+    transition: all 0.3s ease; 
+}
+
+.content p {
+    color: violet;
+    margin-bottom: 50px;
+}
+.content h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+.image-side {
+    background-color: white;
+    
+    flex: 1;
+    padding: 10px;
+}
+
+.image-side img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
